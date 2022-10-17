@@ -1,0 +1,2 @@
+# laboretorna2
+.idea
