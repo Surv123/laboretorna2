@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="scenePane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AddApparatController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@IMG/Frame%207.png" />
+         </image>
+      </ImageView>
+      <ChoiceBox fx:id="cabinet" layoutX="33.0" layoutY="341.0" prefWidth="150.0" style="-fx-background-color: ffffff; -fx-background-radius: 10;" />
+      <Label layoutX="38.0" layoutY="14.0" text="Оберіть обладнання" textFill="WHITE">
+         <font>
+            <Font name="Philosopher" size="14.0" />
+         </font></Label>
+      <TableView fx:id="tableView" layoutX="265.0" layoutY="74.0" opacity="0.95" prefHeight="352.0" prefWidth="507.0" style="-fx-background-color: #B68F47; -fx-background-radius: 20;" />
+      <Button layoutX="437.0" layoutY="440.0" mnemonicParsing="false" onAction="#buy" prefHeight="44.0" prefWidth="146.0" style="-fx-background-radius: 40; -fx-background-color: #146AAC;" text="Купити" textFill="WHITE">
+         <font>
+            <Font name="Philosopher" size="18.0" />
+         </font></Button>
+      <Button layoutY="504.0" mnemonicParsing="false" onAction="#back" prefHeight="95.0" prefWidth="204.0" style="-fx-background-color: #090809; -fx-background-radius: 20000;" text="Повернутися" textFill="WHITE">
+         <font>
+            <Font name="Philosopher" size="24.0" />
+         </font></Button>
+      <ChoiceBox fx:id="apparat" layoutX="26.0" layoutY="84.0" prefWidth="150.0" style="-fx-background-color: ffffff; -fx-background-radius: 10;" />
+      <ChoiceBox fx:id="employeeList" layoutX="33.0" layoutY="214.0" prefWidth="150.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10;" />
+      <Label layoutX="38.0" layoutY="265.0" text="Оберіть приміщення" textFill="WHITE">
+         <font>
+            <Font name="Philosopher" size="14.0" />
+         </font></Label>
+      <Label layoutX="44.0" layoutY="135.0" text="Оберіть робітника" textFill="WHITE">
+         <font>
+            <Font name="Philosopher" size="14.0" />
+         </font></Label>
+      <ChoiceBox fx:id="supplierList" layoutX="26.0" layoutY="462.0" prefWidth="150.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 10;" />
+      <Label layoutX="28.0" layoutY="390.0" text="Оберіть постачальника" textFill="WHITE">
+         <font>
+            <Font name="Philosopher" size="14.0" />
+         </font></Label>
+      <Button layoutX="625.0" layoutY="530.0" mnemonicParsing="false" onAction="#logout" prefHeight="44.0" prefWidth="146.0" style="-fx-background-color: BC5736; -fx-background-radius: 40;" text="Вийти" textFill="WHITE">
+         <font>
+            <Font name="Philosopher" size="24.0" />
+         </font></Button>
+      <Label layoutX="337.0" layoutY="22.0" text="Закупівля обладнання" textFill="#463619">
+         <font>
+            <Font name="Philosopher Italic" size="36.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="265.0" layoutY="530.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@IMG/Frame%202.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

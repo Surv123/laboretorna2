@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="scenePane" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #89B5AF;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.WorkerMenuController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="800.0" opacity="0.8" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@IMG/Frame%204.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="workerLabel" layoutX="490.0" layoutY="19.0" prefHeight="34.0" prefWidth="150.0" text="Worker" textFill="WHITE">
+         <font>
+            <Font name="Philosopher Italic" size="24.0" />
+         </font></Label>
+      <ListView fx:id="servicesListView" layoutX="14.0" layoutY="164.0" opacity="0.9" prefHeight="400.0" prefWidth="248.0" style="-fx-background-color: #689CC3;" />
+      <Label layoutX="285.0" layoutY="22.0" text="Вітаємо, робітник ">
+         <font>
+            <Font name="Philosopher" size="24.0" />
+         </font></Label>
+      <Label layoutX="16.0" layoutY="107.0" prefHeight="28.0" prefWidth="248.0" style="-fx-background-color: #146AAC; -fx-background-radius: 10;" text="   Список обладнання" textFill="WHITE">
+         <font>
+            <Font name="Philosopher" size="24.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="363.0" layoutY="164.0" prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: #678983;">
+         <children>
+            <ImageView fitHeight="401.0" fitWidth="400.0" layoutX="3.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@IMG/image%209.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="infoLabel" layoutX="33.0" layoutY="26.0" prefHeight="25.0" prefWidth="352.0" textFill="WHITE">
+               <font>
+                  <Font name="Roboto Light" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="nameLabel" layoutX="33.0" layoutY="68.0" prefHeight="17.0" prefWidth="263.0" textFill="WHITE">
+               <font>
+                  <Font name="Roboto Light" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="typeLabel" layoutX="33.0" layoutY="108.0" prefHeight="17.0" prefWidth="169.0" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="materialLabel" layoutX="33.0" layoutY="146.0" prefHeight="17.0" prefWidth="169.0" textFill="WHITE">
+               <font>
+                  <Font name="Roboto Light" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="damageLabel" layoutX="35.0" layoutY="185.0" prefHeight="22.0" prefWidth="226.0" textFill="WHITE">
+               <font>
+                  <Font name="Roboto Light" size="16.0" />
+               </font>
+            </Label>
+            <Circle fx:id="coloredCircle" fill="DODGERBLUE" layoutX="262.0" layoutY="146.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+            <TextField fx:id="priceTF" layoutX="96.0" layoutY="58.0" prefHeight="34.0" prefWidth="216.0" promptText="Введіть вартість" style="-fx-background-color: ffffff; -fx-background-radius: 10;">
+               <font>
+                  <Font name="Philosopher" size="13.0" />
+               </font></TextField>
+            <TextField fx:id="company" layoutX="97.0" layoutY="107.0" prefHeight="34.0" prefWidth="216.0" promptText="Введіть ремонтуючу команію" style="-fx-background-radius: 10; -fx-background-color: #689CC3;">
+               <font>
+                  <Font name="Philosopher" size="13.0" />
+               </font></TextField>
+            <Button layoutX="117.0" layoutY="288.0" mnemonicParsing="false" onAction="#price" prefHeight="34.0" prefWidth="183.0" style="-fx-background-radius: 40; -fx-background-color: #146AAC;" text="Переоцінка" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Philosopher" size="14.0" />
+               </font></Button>
+            <Button layoutX="120.0" layoutY="337.0" mnemonicParsing="false" onAction="#fix" prefHeight="34.0" prefWidth="183.0" style="-fx-background-radius: 40; -fx-background-color: #090809;" text="Ремонтування" textFill="WHITE">
+               <font>
+                  <Font name="Philosopher" size="14.0" />
+               </font></Button>
+         </children></AnchorPane>
+      <Button layoutX="685.0" layoutY="16.0" mnemonicParsing="false" onAction="#logout" prefHeight="46.0" prefWidth="87.0" style="-fx-background-color: #BC5736; -fx-background-radius: 20;" text="Вийти" textFill="WHITE">
+         <font>
+            <Font name="Philosopher" size="18.0" />
+         </font></Button>
+      <Label layoutX="447.0" layoutY="107.0" prefHeight="28.0" prefWidth="236.0" style="-fx-background-color: ffffff; -fx-background-radius: 10;" text="    Дії з обладнанням" textFill="#146aac">
+         <font>
+            <Font name="Philosopher" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

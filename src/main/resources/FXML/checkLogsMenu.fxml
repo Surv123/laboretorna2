@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="783.0" style="-fx-background-color: #89B5AF;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CheckLogsMenuController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="813.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@IMG/Frame%205.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="-221.0" layoutY="318.0" rotate="-90.0" text="Оберай з розумом. Оберай з розумом. Оберай з розумом. Оберай з " textFill="WHITE">
+         <font>
+            <Font name="Philosopher Italic" size="18.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="choiceBox" layoutX="371.0" layoutY="67.0" prefHeight="25.0" prefWidth="312.0" style="-fx-background-color: #B68F47; -fx-background-radius: 10;" />
+      <TableView fx:id="tableView" layoutX="105.0" layoutY="106.0" opacity="0.85" prefHeight="384.0" prefWidth="578.0" style="-fx-background-color: #B68F47; -fx-background-radius: 20;" />
+      <Button fx:id="backButton" layoutX="105.0" layoutY="518.0" mnemonicParsing="false" onAction="#back" prefHeight="37.0" prefWidth="140.0" style="-fx-background-color: #090809; -fx-background-radius: 20;" text="Вернуться " textFill="WHITE">
+         <font>
+            <Font name="Philosopher" size="18.0" />
+         </font></Button>
+      <Label layoutX="105.0" layoutY="67.0" text="Оберіть користувача" textFill="#bc5736">
+         <font>
+            <Font name="Philosopher" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="542.0" layoutY="515.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="140.0" style="-fx-background-radius: 40; -fx-background-color: #BC5736;" text="Вийти" textFill="WHITE">
+         <font>
+            <Font name="Philosopher" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

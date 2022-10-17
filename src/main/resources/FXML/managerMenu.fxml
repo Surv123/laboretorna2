@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="scenePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #89B5AF;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ManagerMenuController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@IMG/Frame%203.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="managerLabel" layoutX="513.0" layoutY="61.0" prefHeight="46.0" prefWidth="180.0" text="Manager" textFill="#bc5736">
+         <font>
+            <Font name="Philosopher Italic" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="11.0" layoutY="350.0" mnemonicParsing="false" onAction="#addOtvetstvenniy" prefHeight="35.0" prefWidth="202.0" style="-fx-background-color: B68F47; -fx-background-radius: 20;" text="Закріпити відповідального" textFill="WHITE">
+         <font>
+            <Font name="Roboto Light" size="14.0" />
+         </font></Button>
+      <Button layoutX="11.0" layoutY="140.0" mnemonicParsing="false" onAction="#execution" prefHeight="35.0" prefWidth="180.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 20;" text="Звільнити співробітника" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Roboto Light" size="14.0" />
+         </font></Button>
+      <TableView fx:id="tableView" layoutX="300.0" layoutY="166.0" prefHeight="420.0" prefWidth="490.0" style="-fx-background-radius: 40; -fx-background-color: #689CC3;" />
+      <Label layoutX="299.0" layoutY="70.0" text="Вітаємо, шановний">
+         <font>
+            <Font name="Philosopher" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="687.0" layoutY="12.0" mnemonicParsing="false" onAction="#logout" prefHeight="46.0" prefWidth="87.0" style="-fx-background-color: #BC5736; -fx-background-radius: 40;" text="Вийти" textFill="WHITE">
+         <font>
+            <Font name="Philosopher" size="18.0" />
+         </font></Button>
+      <RadioButton fx:id="completedRadioButton" layoutX="300.0" layoutY="118.0" mnemonicParsing="false" onAction="#setupTable" text="Діючі співробітники">
+         <toggleGroup>
+            <ToggleGroup fx:id="group" />
+         </toggleGroup>
+         <font>
+            <Font name="Philosopher" size="16.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="notRadioButton" layoutX="586.0" layoutY="115.0" mnemonicParsing="false" onAction="#setupTable" prefHeight="28.0" prefWidth="202.0" text="Звільнені співробітники" toggleGroup="$group">
+         <font>
+            <Font name="Philosopher" size="16.0" />
+         </font>
+      </RadioButton>
+      <ChoiceBox fx:id="employeeList" layoutX="11.0" layoutY="45.0" prefWidth="150.0" style="-fx-background-radius: 20; -fx-background-color: FFFFFF;" />
+      <ChoiceBox fx:id="cabinet" layoutX="11.0" layoutY="232.0" prefWidth="150.0" style="-fx-background-radius: 20; -fx-background-color: #B68F47;" />
+      <Label layoutX="12.0" layoutY="14.0" text="Оберіть співробітника">
+         <font>
+            <Font name="Philosopher Bold" size="18.0" />
+         </font></Label>
+      <Label layoutX="14.0" layoutY="205.0" text="Оберіть відділ" textFill="WHITE">
+         <font>
+            <Font name="Philosopher" size="14.0" />
+         </font></Label>
+      <Label layoutX="11.0" layoutY="267.0" prefHeight="20.0" prefWidth="150.0" text="Оберіть апарат" textFill="WHITE">
+         <font>
+            <Font name="Philosopher" size="14.0" />
+         </font></Label>
+      <ChoiceBox fx:id="apparat" layoutX="11.0" layoutY="286.0" prefHeight="26.0" prefWidth="150.0" style="-fx-background-radius: 20; -fx-background-color: #B68F47;" />
+      <Button layoutX="11.0" layoutY="550.0" mnemonicParsing="false" onAction="#buy" prefHeight="35.0" prefWidth="169.0" style="-fx-background-radius: 20; -fx-background-color: BC5736;" text="Купувати обладнання" textFill="WHITE">
+         <font>
+            <Font name="Philosopher" size="14.0" />
+         </font></Button>
+      <Label layoutX="249.0" layoutY="81.0" rotate="-90.0" text="Робітники" textFill="WHITE">
+         <font>
+            <Font name="Philosopher Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="244.0" layoutY="293.0" rotate="-90.0" text="Приміщення" textFill="WHITE">
+         <font>
+            <Font name="Philosopher Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="244.0" layoutY="509.0" rotate="-90.0" text="Обладнання" textFill="WHITE">
+         <font>
+            <Font name="Philosopher Italic" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
